@@ -1,0 +1,68 @@
+.mail {
+    flex: 1;
+    background-color: whitesmoke;
+}
+
+.mail__tools {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+/* Easy way to do a action Bar */
+
+.mail__toolsLeft {
+    display: flex;
+}
+
+.mail__body{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.24);
+}
+
+.mail__bodyHeader {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    padding: 20px;
+    position: relative;
+    /* Parent relative ; childreen absolute => we can change position of
+    childreen to all we want inside the parent */
+}
+
+.mail__important {
+    color: #e8ab02 !important;
+}
+
+.mail__bodyHeader > p {
+    margin-left: 20px;
+}
+
+.mail__time {
+    position: absolute;
+    font-weight: 600;
+    color: gray;
+    top: 24px;
+    right: 5px;
+    font-size: 12px;
+}
+
+.mail__bodyHeader > h2 {
+    font-weight: 400;
+    margin-right: 20px;
+}
+
+.mail__message > p {
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow-wrap: break-word;
+    /* The text when reach the last part of the container gonna wrap
+    in the next ilne */
+}

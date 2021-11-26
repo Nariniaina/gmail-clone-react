@@ -1,0 +1,52 @@
+.sidebarOption {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    color: gray;
+}
+
+.sidebarOption > .MuiSvgIcon-root {
+    padding: 5px;
+}
+
+/* Flex : 1; if you need that to take all the space from the container */
+.sidebarOption > h3 {
+    flex: 1;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.sidebarOption > p {
+    display: none;
+    font-weight: 300;
+}
+
+/* When we hover the sidebarOption > target the p tag */
+.sidebarOption:hover > p {
+    display: inline;
+}
+
+/* To target all for the background color */
+.sidebarOption:hover,
+.sidebarOption:hover > p,
+.sidebarOption:hover > h3,
+/* We don't need to recopy the same code just add other line it works */
+.sidebarOption--active,
+.sidebarOption--active > p,
+.sidebarOption--active > h3
+{
+    background-color: #fcecec;
+    color: #c04b37;
+    font-weight: 600 !important;
+}
+
+.sidebarOption--active > p {
+    display: inline !important;
+}

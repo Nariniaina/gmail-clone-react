@@ -1,0 +1,45 @@
+.emailList {
+    flex: 1;
+    overflow: scroll;
+    /* This 2 combinaison make a list more clean and clear */
+}
+
+.emailList__settings {
+    display: flex;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+    padding-right: 10px;
+}
+
+.emailList__sections {
+    position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    top: 0;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+}
+
+/* Make a space after the last EmailRow */
+.emailList__List {
+    padding-bottom: 20%;
+}
+
+/* =========== HIDE THE SCROLLBAR ========== */
+/* Chromme, Safari, Opera */
+/* .emailList::-webkit-scrollbar { */
+    /* display: none; */
+/* } */
+/* IE, Edge, FireFox */
+/* .emailList { */
+    /* -ms-overflow-style: none;  */
+    /* IE, Edge */
+    /* scrollbar-width: none;  */
+    /* Firefox */
+/* } */
